@@ -22,9 +22,6 @@ in {
     buildPhase = ''
       echo build phase done
     '';
-    installPhase = ''
-      echo install phase done
-    '';
   };
 
 }
