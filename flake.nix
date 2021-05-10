@@ -1,5 +1,5 @@
 {
-  name = "nixpkgs";
+  name = "nixpkgsyloololaoecuaosrceugrceoaua";
   epoch = 2018;
 
   description = "A collection of packages for the Nix package manager";
