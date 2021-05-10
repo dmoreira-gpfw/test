@@ -1,5 +1,6 @@
 with import <nixpkgs> {
-} stdenv.mkDerivation {
+};
+stdenv.mkDerivation {
   name = "gpdev_client";
   version = "0.0";
   src = ../test;
@@ -12,6 +13,7 @@ with import <nixpkgs> {
   configurePhase = ''
     true
   '';
+
   buildPhase = ''
     true
     false
