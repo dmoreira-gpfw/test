@@ -6,8 +6,19 @@ let
   
 in {
   gpdev_client = stdenv.mkDerivation rec {
-    pname = "gpdev_client";
+    pname = "createpasswd";
     version = "0.0";
-    src = ../test;
+    buildInputs = [
+      ninja
+    ];
+
+    src = fetchgit {
+      url = "https://github.com/davidmoreirafr/createpasswd";
+      rev = "master";
+      sha256 = "0nmyp5yrzl9dbq85wyiimsj9fklb8637a1936nw7zzvlnzkgh28n";
+    };
+    buildPhase = ''
+      ninja -j2
+    '';
   };
 }
