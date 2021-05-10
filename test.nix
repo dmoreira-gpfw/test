@@ -14,6 +14,6 @@ with import <nixpkgs> {
   '';
   buildPhase = ''
     true
-    false;
+    false
   '';
 }
