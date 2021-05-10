@@ -5,7 +5,7 @@ let
   pkgs = (import <nixpkgs> {});
   
 in {
-  hello = stdenv.mkDerivation {
+  gpdev_client = stdenv.mkDerivation {
     name = "gpdev_client";
     version = "0.0";
     src = ../test;
@@ -21,6 +21,10 @@ in {
 
     buildPhase = ''
       echo build phase done
+    '';
+
+    installPhase = ''
+      echo install phase
     '';
   };
 
