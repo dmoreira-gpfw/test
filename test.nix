@@ -14,7 +14,7 @@ in {
 
     src = fetchgit {
       url = "https://github.com/davidmoreirafr/createpasswd";
-      rev = "master";
+      rev = "HEAD";
       sha256 = "0nmyp5yrzl9dbq85wyiimsj9fklb8637a1936nw7zzvlnzkgh28n";
     };
     buildPhase = ''
